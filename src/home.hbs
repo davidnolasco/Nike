@@ -1,0 +1,148 @@
+{{!-- Este es un comentario no aparece en el html final --}}
+{{!--  define que master page va a utilizar en este es layoute/basic --}}
+{{#> layouts/basic page_title="Home"}}
+  {{!-- el #*inline "nombre de bloque"
+    define donde incorporar en el layout el codigo siguiente
+   --}}
+  {{#*inline "main-block"}}  
+
+    <!-- Slider -->
+    <div class="relative">
+        <div class="sliderAx">
+            <div id="slider-1" class="container max-auto ">
+            <div class=" bg-contain bg-no-repeat bg-top h-auto text-white py-48 px-10 object-fill " style="background-image: url(https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/974f19b0-0f37-4408-8229-08c78ccad2fa/custom-nike-air-force-1-by-you.jpg">
+            </div> <!-- container -->
+            <br>
+            </div>
+
+            <div id="slider-2" class="container max-auto">
+            <div class="bg-contain bg-no-repeat bg-top h-auto text-white py-48 px-10 object-fill " style="background-image: url(https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/e0422ca2-1fcf-4de5-a3f2-e4c8c0107d2c/air-force-1-gtx-zapatillas-jvjvJ9.jpg">
+            </div> <!-- container -->
+            <br>
+            </div>
+            </div>
+    </div>
+    <!-- Fin del Slider -->
+    <div class="w-auto h-20 shadow-xl border-2 border-gray-400 mx-4 justify-center text-center items-center">
+        <h1 class=" uppercase text-5xl text-center font-bold">Revela tu futuro</h1>
+    </div>
+
+    <section class="relative">
+        <div class="container flex flex-wrap border-gray-200 border-solid h-auto w-full shadow-lg">
+            <div class="p-4 col-start-1 w-full h-screen grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-10 items-center">
+                
+                <div class="flex flex-col justify-self-end items-center h-full w-1/2 bg-contain bg-no-repeat bg-center text-white object-fill" style="background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.0/h_442,c_limit/73d7a090-13fd-4f07-91da-3ebfda7007df/nike-just-do-it.jpg)">
+                </div>
+                <div class="flex flex-col justify-center items-center h-full w-full object-fill text-3xl font-semibold">
+                    <h3>Elige tu propio estilo</h3>
+                    <p>
+                        Tu estilo es unico, aceptalo, reclamalo, vivelo.
+                    </p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center h-full w-full object-fill text-3xl font-semibold">
+                    <h3>Para toda ocacion</h3>
+                    <p>
+                        Siempre seras tu, lleves lo que lleves
+                    </p>
+                </div>
+                <div class="flex flex-col justify-self-start items-center h-full w-1/2 bg-contain bg-no-repeat bg-center text-white object-fill" style="background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.0/h_401,c_limit/c8dd4e32-02ec-4213-a858-7b0a60370f9e/sitio-web-oficial-de-nike.jpg)">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="p-4 relative">
+      {{!-- todas las imagenes deben estar en img_src y referenciadas con imgs/imagen.ext --}}
+        <section>
+
+            <div class="container mx-auto flex flex-wrap my-0 justify-center sm:h-32 lg:h-52 xl:h-56">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-16 h-full">
+
+                    <div class="flex flex-col justify-center items-center max-w-sm mx-auto my-0 h-full w-full">
+                        <div style="background-image: url(https://i.pinimg.com/originals/57/84/5b/57845b5721b6e36e15098d6abe7886a4.jpg" class=" h-full w-full rounded-t-lg shadow-lg bg-contain bg-center bg-no-repeat border-2 border-gray-800 border-solid"></div>
+                        <div class="w-56 md:w-64 bg-white shadow-lg rounded-b-lg overflow-hidden border-2 border-gray-800">
+                            <a href="./jordan.html">
+                                <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Jordan</div>
+                            </a>  
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center max-w-sm mx-auto my-0 h-full w-full">
+                        <div style="background-image: url(https://i.pinimg.com/736x/8f/51/af/8f51af894b5484d43f395f201e035f3d.jpg" class=" h-full w-full rounded-t-lg shadow-lg bg-contain bg-center bg-no-repeat border-2 border-gray-800 border-solid"></div>
+                        <div class="w-56 md:w-64 bg-white shadow-lg rounded-b-lg overflow-hidden border-2 border-gray-800">
+                            <a href="./contact.html">
+                                <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Air Force</div>
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                   <div class="flex flex-col justify-center items-center max-w-sm mx-auto my-0 h-full w-full">
+                        <div style="background-image: url(https://www.mor.bo/wp-content/uploads/2018/01/nike-03.png" class=" h-full w-full rounded-t-lg shadow-lg bg-contain bg-center bg-no-repeat border-2 border-gray-800 border-solid"></div>
+                        <div class="w-56 md:w-64 bg-white shadow-lg rounded-b-lg overflow-hidden border-2 border-gray-800">
+                            <a href="./offwhite.html">
+                                <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Off-White</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <!-- Script Slider-->
+    <script>
+        var cont=0;
+        function loopSlider(){
+            var xx= setInterval(function(){
+                switch(cont)
+                {
+                    case 0:{
+                        $("#slider-1").fadeOut(400);
+                        $("#slider-2").delay(400).fadeIn(400);
+                        $("#sButton1").removeClass("bg-purple-800");
+                        $("#sButton2").addClass("bg-purple-800");
+                    cont=1;
+        
+                    break;
+                    }
+                    case 1:
+                    {
+        
+                        $("#slider-2").fadeOut(400);
+                        $("#slider-1").delay(400).fadeIn(400);
+                        $("#sButton2").removeClass("bg-purple-800");
+                        $("#sButton1").addClass("bg-purple-800");
+                    
+                    cont=0;
+        
+                    break;
+                    }
+        
+        
+                    }},4000);
+
+                }
+
+    function reinitLoop(time){
+        clearInterval(xx);
+        setTimeout(loopSlider(),time);
+    }
+
+        $(window).ready(function(){
+            $("#slider-2").hide();
+            loopSlider();
+        });
+
+  
+    </script>
+    
+
+
+   {{/inline}}
+{{/layouts/basic}}
