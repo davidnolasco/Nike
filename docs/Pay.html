@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css"/>
+  <link rel="icon" href="imgs/nikenobg.ico">
+    <title>Pay</title>
+</head>
+
+<body class="min-h-screen flex flex-col">
+  <header>
+      <div class="relative bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="flex justify-between items-start md:items-center border-b-2 border-black py-6 md:justify-start md:space-x-10">
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+              <a href="../../home.html">
+                <span class="sr-only">Workflow</span>
+                <img class="h-8 w-auto sm:h-10 " src="https://logo-base.com/logo/nike-logo-black-and-white-inverted-colors.png" alt="Home">
+              </a>
+            </div>
+            <nav class="hidden block md:flex text-white" id="menu">
+              <a href="index.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Inicio
+              </a>
+              <a href="jordan.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Jordan
+              </a>
+              <a href="contact.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Air Force
+              </a>
+              <a href="offwhite.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Off-White
+              </a>
+              <a href="aboutus.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Sobre Nosotros
+              </a>
+            </nav>
+            <div id="secmenu" class="hidden block md:flex md:flex-row items-center md:justify-end md:flex-1 lg:w-0">
+              <a href="login.html"
+                class="w-100 md:ml-6 mb-4 md:mb-0 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-gray bg-gray-200 hover:bg-gray-300">
+                Iniciar
+              </a>
+              <a href="cuenta.html"
+                class="w-100 md:ml-6 mb-4 md:mb-0 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                Crear Cuenta
+              </a>
+            </div>
+            <div class="-mr-2 -my-2 md:hidden">
+              <button type="button" id="menubtn"
+                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <span class="sr-only">Open menu</span>
+                <svg class="h-6 w-6" id="openSVG" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg class="h-6 w-6 hidden" id="closeSVG"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function(){
+          let menu = document.getElementById("menu");
+          let secmenu = document.getElementById("secmenu");
+          let closeSVG = document.getElementById("closeSVG");
+          let openSVG = document.getElementById("openSVG");
+      
+          document.getElementById("menubtn").addEventListener("click", 
+            function(e){
+              e.preventDefault();
+              e.stopPropagation();
+              menu.classList.toggle("hidden");
+              secmenu.classList.toggle("hidden");
+              closeSVG.classList.toggle("hidden");
+              openSVG.classList.toggle("hidden");
+            }
+          );
+        })
+      </script>
+  </header>
+  <main class="xl:container mx-auto flex-grow">
+  <SCRIPT languaje="JavaScript">
+function pulsar() {
+   
+    if(document.getElementById('nombreTar').value === ''){
+        alert("¡El nombre no puede estar vacío!");
+    }else if(document.getElementById('numTar').value === ''){
+        alert("¡El número de tarjeta no puede estar vacío!");
+    }else if(document.getElementById('numTar').value.length < 16 || document.getElementById('numTar').value.length > 16){
+            alert("¡Número inválido!");
+    }else if(document.getElementById('mesTar').value === ''){
+        alert("¡El mes no puede estar vacío!");
+    }else if(document.getElementById('añoTar').value === ''){
+        alert("¡El año no puede estar vacío!");
+    }else if(document.getElementById('cvvTar').value === ''){
+        alert("¡El código de seguridad no puede estar vacío!");
+    }else{
+        alert("¡Pago realizado con éxito!");
+    }
+
+}
+</SCRIPT>
+    <section class="p-8 relative">
+        <section>
+            <div class="h-screen bg-white">
+                <div class="py-24">
+                    <div class="max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg md:max-w-5xl">
+                        <div class="md:flex ">
+                            <div class="w-full p-5 px-6 py-6">
+                                <div class="md:grid md:grid-cols-3 gap-2 ">
+                                    <h1 class="text-xl font-medium py-5 px-5">Billing</h1>     
+                                    <div class="col-span-4 p-5">                                                           
+                                        <div class=" p-5 bg-gray-800 rounded overflow-visible"> <span class="text-xl font-medium text-gray-100 block pb-3">Card Details</span> <span class="text-xl text-gray-400 ">Card Type</span>
+                                            <div class="overflow-visible flex justify-between items-center mt-2">
+                                                <div class="rounded w-60 h-33 bg-gray-500 py-2 px-4 relative right-10"> <span class="italic text-lg font-medium text-gray-200 underline">VISA</span>
+                                                    <div class="flex justify-between items-center pt-4 "> <span class="text-xl text-gray-200 font-medium">****</span> <span class="text-xl text-gray-200 font-medium">****</span> <span class="text-xl text-gray-200 font-medium">****</span> <span class="text-xl text-gray-200 font-medium">****</span></div>
+                                                    <div class="flex justify-between items-center mt-3"> <span class="text-lg text-gray-200">Giga Tamarashvili</span> <span class="text-xl text-gray-200">12/18</span></div>
+                                                </div>
+                                                <div class="flex justify-center items-center flex-col"> <img src="https://img.icons8.com/color/96/000000/mastercard-logo.png" width="40" class="relative right-5" /> <span class="text-xl font-medium text-gray-200 bottom-2 relative right-5">mastercard</span></div>
+                                            </div>
+                                            <div class="flex justify-center flex-col pt-3"> <label class="text-xl text-gray-400 ">Name on Card</label> <input type="text" class="focus:outline-none w-full h-6 bg-gray-800 text-white placeholder-gray-300 text-lg border-b border-gray-600 py-4" placeholder="Giga Tamarashvili" id="nombreTar"></div>
+                                            <div class="flex justify-center flex-col pt-3"> <label class="text-xl text-gray-400 ">Card Number</label> <input type="text" class="focus:outline-none w-full h-6 bg-gray-800 text-white placeholder-gray-300 text-lg border-b border-gray-600 py-4" placeholder="**** **** **** ****" id="numTar"></div>
+                                            <div class="grid grid-cols-3 gap-2 pt-2 mb-3">
+                                                <div class="col-span-2 "> <label class="text-xl text-gray-400">Expiration Date</label>
+                                                    <div class="grid grid-cols-2 gap-2"> <input type="text" class="focus:outline-none w-full h-6 bg-gray-800 text-white placeholder-gray-300 text-lg border-b border-gray-600 py-4" placeholder="mm" id="mesTar"> <input type="text" class="focus:outline-none w-full h-6 bg-gray-800 text-white placeholder-gray-300 text-lg border-b border-gray-600 py-4" placeholder="yyyy" id="añoTar"></div>
+                                                </div>
+                                                <div class=""> <label class="text-xl text-gray-400">CVV</label> <input type="text" class="focus:outline-none w-full h-6 bg-gray-800 text-white placeholder-gray-300 text-lg border-b border-gray-600 py-4" placeholder="XXX" id="cvvTar"></div>
+                                            </div> 
+                                            <button class="h-12 w-full bg-blue-500 rounded focus:outline-none text-white hover:bg-blue-600" onClick=pulsar()>Check Out</button>
+                                            
+                                                
+                                            
+                                        </div>
+                                        <div class="flex justify-between items-center mt-6 pt-6 border-t">
+                                                    <div class="flex items-center"> <i class="fa fa-arrow-left text-lg pr-2" onClick=history.go(-1)></i> <span class="text-md font-medium text-blue-500" onClick=history.go(-1)>Continue Shopping</span> </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+    </section>
+  </main>
+  <footer class=" bg-black text-white">
+    <section class="flex flex-col md:flex-row justify-between">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <section class="flex flex-col justify-between items-center p-8 md:w-2/6 order-3 md:order-2">
+      Todos los Derechos Reservados 2021
+      <div class="space-x-1">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-envelope"></i>
+            </div>
+    </section>
+    <section class="flex flex-col justify-between items-center md:w-2/6 p-8 order-1">
+      
+    </section>
+    
+    <section class="flex flex-col justify-between items-center p-8 md:w-2/6 order-2 md:order-3">
+      <span></span>
+    </section>
+    
+    
+    </section>
+  </footer>
+  <script src="bundle.js"></script>
+</body>
+
+</html>

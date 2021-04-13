@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css"/>
+  <link rel="icon" href="imgs/nikenobg.ico">
+    <title>Nike</title>
+</head>
+
+<body class="min-h-screen flex flex-col">
+  <header>
+      <div class="relative bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="flex justify-between items-start md:items-center border-b-2 border-black py-6 md:justify-start md:space-x-10">
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+              <a href="../../home.html">
+                <span class="sr-only">Workflow</span>
+                <img class="h-8 w-auto sm:h-10 " src="https://logo-base.com/logo/nike-logo-black-and-white-inverted-colors.png" alt="Home">
+              </a>
+            </div>
+            <nav class="hidden block md:flex text-white" id="menu">
+              <a href="index.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Inicio
+              </a>
+              <a href="jordan.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Jordan
+              </a>
+              <a href="contact.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Air Force
+              </a>
+              <a href="offwhite.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Off-White
+              </a>
+              <a href="aboutus.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Sobre Nosotros
+              </a>
+            </nav>
+            <div id="secmenu" class="hidden block md:flex md:flex-row items-center md:justify-end md:flex-1 lg:w-0">
+              <a href="login.html"
+                class="w-100 md:ml-6 mb-4 md:mb-0 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-gray bg-gray-200 hover:bg-gray-300">
+                Iniciar
+              </a>
+              <a href="cuenta.html"
+                class="w-100 md:ml-6 mb-4 md:mb-0 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                Crear Cuenta
+              </a>
+            </div>
+            <div class="-mr-2 -my-2 md:hidden">
+              <button type="button" id="menubtn"
+                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <span class="sr-only">Open menu</span>
+                <svg class="h-6 w-6" id="openSVG" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg class="h-6 w-6 hidden" id="closeSVG"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function(){
+          let menu = document.getElementById("menu");
+          let secmenu = document.getElementById("secmenu");
+          let closeSVG = document.getElementById("closeSVG");
+          let openSVG = document.getElementById("openSVG");
+      
+          document.getElementById("menubtn").addEventListener("click", 
+            function(e){
+              e.preventDefault();
+              e.stopPropagation();
+              menu.classList.toggle("hidden");
+              secmenu.classList.toggle("hidden");
+              closeSVG.classList.toggle("hidden");
+              openSVG.classList.toggle("hidden");
+            }
+          );
+        })
+      </script>
+  </header>
+  <main class="xl:container mx-auto flex-grow">
+    <section class="p-8 relative">
+      <section>
+
+        <div class="container mx-auto flex flex-wrap my-0 justify-center">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10">
+
+            <div class="flex flex-col justify-center items-center max-w-sm mx-auto my-0">
+              <div style="background-image: url(https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/fb7eda3c-5ac8-4d05-a18f-1c2c5e82e36e/blazer-mid-77-vintage-zapatillas-pMfjs8.jpg" class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"></div>
+                <div class="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
+                  <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Nike Blazer mid vintage</div>
+                  <div class="flex items-center justify-between py-2 px-3 bg-gray-400">
+                    <h1 class="text-gray-800 font-bold ">$100</h1>
+                    <h1 class="text-red-800 font-bold ">Stock</h1>
+                  </div>
+                  <h1 class="text-gray-800 font-bold ">Descripción</h1>
+                  <h1 class="text-blue-800 font-bold ">Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse pretium, massa interdum vitae urna dictum viverra libero lacinia, habitasse fusce dictumst sagittis tortor laoreet commodo dis.</h1>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center max-w-sm mx-auto my-0">
+              <div style="background-image: url(https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/92954adb-5104-4958-b305-b08fa5192da7/custom-nike-air-force-1-low-cr7-by-you.jpg" class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"></div>
+                <div class="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
+                  <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Nike air force low cr7</div>
+                  <div class="flex items-center justify-between py-2 px-3 bg-gray-400">
+                    <h1 class="text-gray-800 font-bold ">$200</h1>
+                    <h1 class="text-red-800 font-bold ">Stock</h1>
+                  </div>
+                  <h1 class="text-gray-800 font-bold ">Descripción</h1>
+                  <h1 class="text-blue-800 font-bold ">Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse pretium, massa interdum vitae urna dictum viverra libero lacinia, habitasse fusce dictumst sagittis tortor laoreet commodo dis.</h1>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center max-w-sm mx-auto my-0">
+              <div style="background-image: url(https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/04bf1a2c-1959-4121-832f-ce779f4abb2c/custom-nike-alpha-huarache-elite-3-mid-by-you.jpg" class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"></div>
+                <div class="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
+                  <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Nike alpha huarache elite 3</div>
+                  <div class="flex items-center justify-between py-2 px-3 bg-gray-400">
+                    <h1 class="text-gray-800 font-bold ">$120</h1>
+                    <h1 class="text-red-800 font-bold ">Stock</h1>
+                  </div>
+                  <h1 class="text-gray-800 font-bold ">Descripción</h1>
+                  <h1 class="text-blue-800 font-bold ">Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse pretium, massa interdum vitae urna dictum viverra libero lacinia, habitasse fusce dictumst sagittis tortor laoreet commodo dis.</h1>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center max-w-sm mx-auto my-0">
+              <div style="background-image: url(https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0b8e06df-6dcd-4a4e-bcba-24dbba858764/custom-nike-air-force-1-high-by-you.jpg" class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"></div>
+                <div class="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
+                  <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Nike airforce high by</div>
+                  <div class="flex items-center justify-between py-2 px-3 bg-gray-400">
+                    <h1 class="text-gray-800 font-bold ">$140</h1>
+                    <h1 class="text-red-800 font-bold ">Stock</h1>
+                  </div>
+                  <h1 class="text-gray-800 font-bold ">Descripción</h1>
+                  <h1 class="text-blue-800 font-bold ">Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse pretium, massa interdum vitae urna dictum viverra libero lacinia, habitasse fusce dictumst sagittis tortor laoreet commodo dis.</h1>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center max-w-sm mx-auto my-0">
+              <div style="background-image: url(https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/8db0b628-010d-4162-bd01-99352fc72c2c/air-max-90-zapatillas-pnkZQw.jpg" class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"></div>
+                <div class="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
+                  <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Nike airmax 90</div>
+                  <div class="flex items-center justify-between py-2 px-3 bg-gray-400">
+                    <h1 class="text-gray-800 font-bold ">$129</h1>
+                    <h1 class="text-red-800 font-bold ">Stock</h1>
+                  </div>
+                  <h1 class="text-gray-800 font-bold ">Descripción</h1>
+                  <h1 class="text-blue-800 font-bold ">Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse pretium, massa interdum vitae urna dictum viverra libero lacinia, habitasse fusce dictumst sagittis tortor laoreet commodo dis.</h1>
+
+                </div>
+            </div>
+            
+            <div class="flex flex-col justify-center items-center max-w-sm mx-auto my-0">
+              <div style="background-image: url(https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/i1-be698598-3970-4d86-84f6-1fc6af6ccf47/air-max-triax-96-sp-zapatillas-7PMkKk.jpg" class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"></div>
+                <div class="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
+                  <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Nike triax</div>
+                  <div class="flex items-center justify-between py-2 px-3 bg-gray-400">
+                    <h1 class="text-gray-800 font-bold ">$150</h1>
+                    <h1 class="text-red-800 font-bold ">Stock</h1>
+                  </div>
+                  <h1 class="text-gray-800 font-bold ">Descripción</h1>
+                  <h1 class="text-blue-800 font-bold ">Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse pretium, massa interdum vitae urna dictum viverra libero lacinia, habitasse fusce dictumst sagittis tortor laoreet commodo dis.</h1>
+
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center max-w-sm mx-auto my-0">
+              <div style="background-image: url(https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/9a9d7ad2-b6aa-40d9-8331-6a45e443a91c/custom-nike-air-force-1-high-by-you.jpg" class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"></div>
+                <div class="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
+                  <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Nike airforce high by you</div>
+                  <div class="flex items-center justify-between py-2 px-3 bg-gray-400">
+                    <h1 class="text-gray-800 font-bold ">$140</h1>
+                    <h1 class="text-red-800 font-bold ">Stock</h1>
+                  </div>
+                  <h1 class="text-gray-800 font-bold ">Descripción</h1>
+                  <h1 class="text-blue-800 font-bold ">Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse pretium, massa interdum vitae urna dictum viverra libero lacinia, habitasse fusce dictumst sagittis tortor laoreet commodo dis.</h1>
+
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center max-w-sm mx-auto my-0">
+              <div style="background-image: url(https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/974f19b0-0f37-4408-8229-08c78ccad2fa/custom-nike-air-force-1-by-you.jpg" class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"></div>
+                <div class="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
+                  <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Nike airforce low by you</div>
+                  <div class="flex items-center justify-between py-2 px-3 bg-gray-400">
+                    <h1 class="text-gray-800 font-bold ">$190</h1>
+                    <h1 class="text-red-800 font-bold ">Stock</h1>
+                  </div>
+                  <h1 class="text-gray-800 font-bold ">Descripción</h1>
+                  <h1 class="text-blue-800 font-bold ">Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse pretium, massa interdum vitae urna dictum viverra libero lacinia, habitasse fusce dictumst sagittis tortor laoreet commodo dis.</h1>
+
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center max-w-sm mx-auto my-0">
+              <div style="background-image: url(https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/e0422ca2-1fcf-4de5-a3f2-e4c8c0107d2c/air-force-1-gtx-zapatillas-jvjvJ9.jpg" class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"></div>
+                <div class="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
+                  <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Nike airforce gtx</div>
+                  <div class="flex items-center justify-between py-2 px-3 bg-gray-400">
+                    <h1 class="text-gray-800 font-bold ">$129</h1>
+                    <h1 class="text-red-800 font-bold ">Stock</h1>
+                  </div>
+                  <h1 class="text-gray-800 font-bold ">Descripción</h1>
+                  <h1 class="text-blue-800 font-bold ">Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse pretium, massa interdum vitae urna dictum viverra libero lacinia, habitasse fusce dictumst sagittis tortor laoreet commodo dis.</h1>
+
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center max-w-sm mx-auto my-0">
+              <div style="background-image: url(https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/ab87447c-9069-4ebf-940e-73febfe15811/air-force-1-gtx-boot-botas-QtV9gK.jpg" class="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"></div>
+                <div class="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
+                  <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Nike airforce gtx boots</div>
+                  <div class="flex items-center justify-between py-2 px-3 bg-gray-400">
+                    <h1 class="text-gray-800 font-bold ">$180</h1>
+                    <h1 class="text-red-800 font-bold ">Stock</h1>
+                  </div>
+                  <h1 class="text-gray-800 font-bold ">Descripción</h1>
+                  <h1 class="text-blue-800 font-bold ">Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse pretium, massa interdum vitae urna dictum viverra libero lacinia, habitasse fusce dictumst sagittis tortor laoreet commodo dis.</h1>
+
+                </div>
+            </div>
+
+          </div>
+        </div>
+        
+      </section>
+      
+    </section>
+  </main>
+  <footer class=" bg-black text-white">
+    <section class="flex flex-col md:flex-row justify-between">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <section class="flex flex-col justify-between items-center p-8 md:w-2/6 order-3 md:order-2">
+      Todos los Derechos Reservados 2021
+      <div class="space-x-1">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-envelope"></i>
+            </div>
+    </section>
+    <section class="flex flex-col justify-between items-center md:w-2/6 p-8 order-1">
+      
+    </section>
+    
+    <section class="flex flex-col justify-between items-center p-8 md:w-2/6 order-2 md:order-3">
+      <span></span>
+    </section>
+    
+    
+    </section>
+  </footer>
+  <script src="bundle.js"></script>
+</body>
+
+</html>

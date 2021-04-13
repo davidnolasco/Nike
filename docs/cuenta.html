@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css"/>
+  <link rel="icon" href="imgs/nikenobg.ico">
+    <title>Crear cuentas</title>
+</head>
+
+<body class="min-h-screen flex flex-col">
+  <header>
+      <div class="relative bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="flex justify-between items-start md:items-center border-b-2 border-black py-6 md:justify-start md:space-x-10">
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+              <a href="../../home.html">
+                <span class="sr-only">Workflow</span>
+                <img class="h-8 w-auto sm:h-10 " src="https://logo-base.com/logo/nike-logo-black-and-white-inverted-colors.png" alt="Home">
+              </a>
+            </div>
+            <nav class="hidden block md:flex text-white" id="menu">
+              <a href="index.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Inicio
+              </a>
+              <a href="jordan.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Jordan
+              </a>
+              <a href="contact.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Air Force
+              </a>
+              <a href="offwhite.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Off-White
+              </a>
+              <a href="aboutus.html" class="mx-8 md:mx-0 text-base font-medium text-white block px-3 py-2 hover:text-green-200">
+                Sobre Nosotros
+              </a>
+            </nav>
+            <div id="secmenu" class="hidden block md:flex md:flex-row items-center md:justify-end md:flex-1 lg:w-0">
+              <a href="login.html"
+                class="w-100 md:ml-6 mb-4 md:mb-0 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-gray bg-gray-200 hover:bg-gray-300">
+                Iniciar
+              </a>
+              <a href="cuenta.html"
+                class="w-100 md:ml-6 mb-4 md:mb-0 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                Crear Cuenta
+              </a>
+            </div>
+            <div class="-mr-2 -my-2 md:hidden">
+              <button type="button" id="menubtn"
+                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <span class="sr-only">Open menu</span>
+                <svg class="h-6 w-6" id="openSVG" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg class="h-6 w-6 hidden" id="closeSVG"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function(){
+          let menu = document.getElementById("menu");
+          let secmenu = document.getElementById("secmenu");
+          let closeSVG = document.getElementById("closeSVG");
+          let openSVG = document.getElementById("openSVG");
+      
+          document.getElementById("menubtn").addEventListener("click", 
+            function(e){
+              e.preventDefault();
+              e.stopPropagation();
+              menu.classList.toggle("hidden");
+              secmenu.classList.toggle("hidden");
+              closeSVG.classList.toggle("hidden");
+              openSVG.classList.toggle("hidden");
+            }
+          );
+        })
+      </script>
+  </header>
+  <main class="xl:container mx-auto flex-grow">
+    <section class="p-8 relative"></section>
+    <header>
+        <style>
+            body{
+            background-color: #000;
+            }
+
+            .login-box {
+            width: 500px;
+            height: 400px;
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -55%);
+            box-sizing: border-box;
+            padding: 30px 30px;
+            border-radius: 5%;
+            }
+
+            @media (max-width: 500px){
+                .login-box {
+                width: 300px;
+                height: 400px;
+                top: 55%;
+                }
+            }
+
+            .login-box h1 {
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            }
+
+            .login-box label {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            display: block;
+            }
+
+            .login-box input {
+            width: 100%;
+            margin-bottom: 20px;
+            }
+
+            .login-box input[type="password"] .login-box input[type="mail"]{
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            }
+
+            .login-box input[type="submit"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #4f46e5;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+            }
+
+            .login-box input[type="submit"]:hover {
+            cursor: pointer;
+            color: #000;
+            }
+
+            .login-box a {
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 20px;
+            color: darkgrey;
+            }
+
+            .login-box a:hover {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            }
+        </style>
+    </header>
+    <body>
+        <div class="login-box">
+      <h1>Crear cuenta</h1>
+      <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" placeholder="Nombre">
+        <label for="correo">Correo electrónico</label>
+        <input type="mail" placeholder="Correro electrónico">
+        <label for="password">Contraseña</label>
+        <input type="password" placeholder="Contraseña">
+        <input type="submit" value="Log In">
+        <table>
+            <td>
+                <tr></tr>
+            </td>
+        </table>
+        <a href="#">¿Has olvidado tu contraseña?</a><br>
+        <a href="#">¿No tienes una cuenta?</a>
+      </form>
+    </div>
+    </body>
+
+    </section>
+  </main>
+  <footer class=" bg-black text-white">
+    <section class="flex flex-col md:flex-row justify-between">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <section class="flex flex-col justify-between items-center p-8 md:w-2/6 order-3 md:order-2">
+      Todos los Derechos Reservados 2021
+      <div class="space-x-1">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-envelope"></i>
+            </div>
+    </section>
+    <section class="flex flex-col justify-between items-center md:w-2/6 p-8 order-1">
+      
+    </section>
+    
+    <section class="flex flex-col justify-between items-center p-8 md:w-2/6 order-2 md:order-3">
+      <span></span>
+    </section>
+    
+    
+    </section>
+  </footer>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
